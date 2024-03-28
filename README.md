@@ -1,7 +1,7 @@
 # PokemonTypes
 
 ## Description
-Shows weakness and strength charts for pokemon that is/are entered by user.   
+Shows pokemon typing and those types defensive stats such as what moves are super-effective and which will be not-very-effective.   
 
 ## Authors
 Antonio Pescatore

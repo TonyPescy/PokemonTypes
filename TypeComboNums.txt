@@ -1,0 +1,191 @@
+# Two columns of data, left column is type combo number and right is type combo name.
+# This is purely used for programmer reference and not used in programat all
+
+1 - normal
+2 - normal fighting
+3 - normal flying
+4 - normal poison
+5 - normal ground
+6 - normal rock
+7 - normal bug
+8 - normal ghost
+9 - normal steel
+10 - normal fire
+11 - normal water
+12 - normal grass
+13 - normal electric
+14 - normal psychic
+15 - normal ice
+16 - normal dragon
+17 - normal dark
+18 - normal fairy
+
+19 - fighting
+20 - fighting flying
+21 - fighting poison
+22 - fighting ground
+23 - fighting rock
+24 - fighting bug
+25 - fighting ghost
+26 - fighting steel
+27 - fighting fire
+28 - fighting water
+29 - fighting grass
+30 - fighting electric
+31 - fighting psychic
+32 - fighting ice
+33 - fighting dragon
+34 - fighting dark
+35 - fighting fairy
+
+36 - flying
+37 - flying poison
+38 - flying ground
+39 - flying rock
+40 - flying bug
+41 - flying ghost
+42 - flying steel
+43 - flying fire
+44 - flying water
+45 - flying grass
+46 - flying electric
+47 - flying psychic
+48 - flying ice
+49 - flying dragon
+50 - flying dark
+51 - flying fairy
+
+52 - poison
+53 - poison ground
+54 - poison rock
+55 - poison bug
+56 - poison ghost
+57 - poison steel
+58 - poison fire
+59 - poison water
+60 - poison grass
+61 - poison electric
+62 - poison psychic
+63 - poison ice
+64 - poison dragon
+65 - poison dark
+66 - poison fairy
+
+67 - ground
+68 - ground rock
+69 - ground bug
+70 - ground ghost
+71 - ground steel
+72 - ground fire
+73 - ground water
+74 - ground grass
+75 - ground electric
+76 - ground psychic
+77 - ground ice
+78 - ground dragon
+79 - ground dark
+80 - ground fairy
+
+81 - rock
+82 - rock bug
+83 - rock ghost
+84 - rock steel
+85 - rock fire
+86 - rock water
+87 - rock grass
+88 - rock electric
+89 - rock psychic
+90 - rock ice
+91 - rock dragon
+92 - rock dark
+93 - rock fairy
+
+94 - bug
+95 - bug ghost
+96 - bug steel
+97 - bug fire
+98 - bug water
+99 - bug grass
+100 - bug electric
+101 - bug psychic
+102 - bug ice
+103 - bug dragon
+104 - bug dark
+105 - bug fairy
+
+106 - ghost
+107 - ghost steel
+108 - ghost fire
+109 - ghost water
+110 - ghost grass
+111 - ghost electric
+112 - ghost psychic
+113 - ghost ice
+114 - ghost dragon
+115 - ghost dark
+116 - ghost fairy
+
+117 - steel
+118 - steel fire
+119 - steel water
+120 - steel grass
+121 - steel electric
+122 - steel psychic
+123 - steel ice
+124 - steel dragon
+125 - steel dark
+126 - steel fairy
+
+127 - fire
+128 - fire water
+129 - fire grass
+130 - fire electric
+131 - fire psychic
+132 - fire ice
+133 - fire dragon
+134 - fire dark
+135 - fire fairy
+
+136 - water
+137 - water grass
+138 - water electric
+139 - water psychic
+140 - water ice
+141 - water dragon
+142 - water dark
+143 - water fairy
+
+144 - grass
+145 - grass electric
+146 - grass psychic
+147 - grass ice
+148 - grass dragon
+149 - grass dark
+150 - grass fairy
+
+151 - electric
+152 - electric psychic
+153 - electric ice
+154 - electric dragon
+155 - electric dark
+156 - electric fairy
+
+157 - psychic
+158 - psychic ice
+159 - psychic dragon
+160 - psychic dark
+161 - psychic fairy
+
+162 - ice
+163 - ice dragon
+164 - ice dark
+165 - ice fairy
+
+166 - dragon
+167 - dragon dark
+168 - dragon fairy
+
+169 - dark
+170 - dark fairy
+
+171 - fairy
