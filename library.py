@@ -1,0 +1,2 @@
+# constants
+PW = "MySQLPass1!"
