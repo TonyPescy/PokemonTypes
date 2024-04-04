@@ -1,5 +1,5 @@
 # Two columns of data, left column is type combo number and right is type combo name.
-# This is purely used for programmer reference and not used in programat all
+# This is purely used for programmer reference and not used in program at all
 
 1 - normal
 2 - normal fighting

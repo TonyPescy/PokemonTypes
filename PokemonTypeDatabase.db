@@ -20,16 +20,16 @@ CREATE TABLE IF NOT EXISTS type_combos (
 
 INSERT INTO pokemon (dex_num, poke_name, type_1, type_2, type_combo_num)
 VALUES
-    (1, "Bulbasaur", "grass", "poison", 60),
-    (2, "Ivysaur", "grass", "poison", 60),
-    (3, "Venusaur", "grass", "poison", 60),
-    (4, "Charmander", "fire", NULL, 127),
-    (5, "Charmeleon", "fire", NULL, 127),
-    (6, "Charizard", "fire", "flying", 43),
-    (7, "Squirtle", "water", NULL, 136),
-    (8, "Wartortle", "water", NULL, 136),
-    (9, "Blastoise", "water", NULL, 136),
-    (10, "Caterpie", "bug", NULL, 94)
+    (1, "bulbasaur", "grass", "poison", 60),
+    (2, "ivysaur", "grass", "poison", 60),
+    (3, "venusaur", "grass", "poison", 60),
+    (4, "charmander", "fire", NULL, 127),
+    (5, "charmeleon", "fire", NULL, 127),
+    (6, "charizard", "fire", "flying", 43),
+    (7, "squirtle", "water", NULL, 136),
+    (8, "wartortle", "water", NULL, 136),
+    (9, "blastoise", "water", NULL, 136),
+    (10, "caterpie", "bug", NULL, 94)
 
 INSERT INTO type_combos (type_combo_num, type_combo_name, no_effect, quad_weak, weak, strong, quad_strong)
     VALUES

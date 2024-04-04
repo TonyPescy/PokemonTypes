@@ -12,6 +12,8 @@ Antonio Pescatore
 
 -[Manifest](#manifest)
 
+-[Functions](#functions)
+
 -[Assumptions](#assumptions)
 
 -[Major Decisions and Problems](#major-decisions-and-problems)
@@ -26,6 +28,9 @@ Antonio Pescatore
 [Table of Contents](#table-of-contents)
 
 1. **README.md** - Readme that outlines and summarizes the project.
+
+## Functions
+[Table of Contents](#table-of-contents)
 
 ## Assumptions
 [Table of Contents](#table-of-contents)
