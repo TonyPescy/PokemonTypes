@@ -47,23 +47,49 @@ def create_connection(db_file, user_list, case):
             except Error as e:
                 print(e)
 
-    pokenames_lst = []
-    data = cur.execute("""SELECT poke_name FROM pokemon ORDER BY poke_name;""")    # command gets pokemon nnames and orders them in alphabetical order for binary search
-    for row in data:
-        fixed_row = str(row).replace("('", "")
-        fixed_row = str(fixed_row).replace("',)", "")
-        pokenames_lst.append(str(fixed_row))
 
     # case where user entered the names instead of national dex number
     if case == 1:
 
-        for pokemon in user_list:
-            found = lib.bin_search(pokenames_lst, 0, len(pokenames_lst)-1, pokemon.lower())
+        # ordered list for binary search
+        ordered_list = order_by_name(cur)
+        # list to hold the index at which pokemon were found\
+        ind_lst = []
+
+        # searches for pokemon in ordered list one by one
+        for i in range(user_list):
+            # found is the index at which the pokemon was found
+            found = lib.bin_search(ordered_list, user_list[i].lower())
+            ind_lst.append(found)
+
             if found == -1:     # pokemon was not found
-                print("Pokemon \"" + pokemon + "\" was not found, continuing with other pokemon entered...")
-                return found
+                print("Pokemon \"" + user_list[i] + "\" was not found, continuing with other pokemon entered...")
+
             else:   # pokemon was found
-                print("Pokemon \"" + pokemon + "\" was found, continuing with other pokemon entered...")
-                return found
+                print("Pokemon \"" + user_list[i] + "\" was found, continuing with other pokemon entered...")
+
+        # PLAN: 
+        # USING THE INDEX LIST WE WILL KNOW WHICH POKEMONS TO SKIP
+        # THEN USING THE NAMES OF POKEMON THE USER INPUTTED WE WILL
+        # SEARCH THE DATABASE AND GET THE TYPE_COMBO_NUMS OF THOSE POKEMON
+        # THEN SEARCH THE TYPE_COMBO DATABASE AND RETURN THE TYPES THE POKEMON
+        # WILL RESIST AND WILL BE WEAK TO TO
+        return ind_lst
 
     # conn.close()
+
+# Function: order_by_name
+# Parameters: cursor - cursor being used in current connection
+# Desc: creates a list of all pokemon names that are alphabetical order for binary search
+# Returns: ordered lost of pokemon
+def order_by_name(cursor):
+    # list to hold pokemon names in order
+    pokenames_lst = []
+    data = cursor.execute("""SELECT poke_name FROM pokemon ORDER BY poke_name;""")    # command gets pokemon nnames and orders them in alphabetical order for binary search
+    # cleans up all of the pokemon names so that they can be compared in binary search
+    for row in data:
+        fixed_row = str(row).replace("('", "")
+        fixed_row = str(fixed_row).replace("',)", "")
+        pokenames_lst.append(str(fixed_row))
+    
+    return pokenames_lst

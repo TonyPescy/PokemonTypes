@@ -4,31 +4,36 @@ POKEDB = "PokemonTypeDatabase" # name of pokemon database
 
 # Function: bin_search
 # Parameters: arr - array to be search through, from sqlite3 database
-#             low - lowest in array
-#             high - highest in array
-#             x - what to be searched for in database
+#             tar - what to be searched for in database
 # Desc: Binary search used to look through sorted data. Will return the location of the data, -1 means it was not found 
-def bin_search(arr, low, high, x):
-    # base case
-    while (low <= high):
+def bin_search(arr, tar):
+    # high and low pointers
+    low = 0
+    high = int(len(arr) - 1)
 
-        mid = low + (high // 2)
-
-        if arr[mid]
-
-        if (result == 0):
-            return mid - 1
-        
-        # if x is larger ignore left side of arr
-        elif (result > 0):
+    try:
+        # binary search
+        # repeats until high and low meet
+        while low <= high:
+            # finds mid point of array
+            mid = low + (high - low) // 2
+            # if target is at current midpoint, return index or target
+            if arr[mid] == tar:
+                    return mid
+                
+            # the mid point is less than the target, target must be in upper half of array
+            elif arr[mid] < tar:
                 low = mid + 1
+
+            # the mid point is more than the target, target must be in lower half of array
+            else:
+                high = mid - 1
+
+    # error with binary search, pokemon was not in list
+    except:
+         return - 1
+
         
-        # if x is smaller, ignore right half of arr
-        else:
-            high = mid - 1
-        
-    else:
-         return -1
 # bin_search end
 
 
