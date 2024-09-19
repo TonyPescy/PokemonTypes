@@ -1,5 +1,7 @@
 # PokemonTypes
 
+CODEACADEMY HAS STUFF ON SQLITE AND PYTHON, LOOK INTO IT
+
 ## Description
 Shows pokemon typing and those types defensive stats such as what moves are super-effective and which will be not-very-effective.   
 
